@@ -21,4 +21,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
 	url(r'^index/$',views.index),
 	url(r'^api/',include('sign.urls',namespace="sign")),
+	url(r'^login_action/$',views.login_action),
+	url(r'^test/',views.test),
+	url(r'^event_manage/$',views.event_manage),
 ]
